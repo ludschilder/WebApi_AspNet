@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Tarefas", "Impacta.Tarefas\Impacta.Tarefas.csproj", "{0D78C696-BB62-4C89-AE99-443F231154A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Tarefas.DAL", "Impacta.Tarefas.DAL\Impacta.Tarefas.DAL.csproj", "{82037E40-EB77-45E6-B278-ACC2F33429FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.MOD", "Impacta.MOD\Impacta.MOD.csproj", "{5AADC233-6C98-4787-B4E5-F5DBFFC292BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Tarefas.Business", "Impacta.Tarefas.Business\Impacta.Tarefas.Business.csproj", "{5D265C4D-28E3-4F86-B72E-0B755D3A36BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Tarefas.EF", "Impacta.Tarefas.EF\Impacta.Tarefas.EF.csproj", "{FAAC87E1-415B-4A07-9DD2-BC68683503D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.Tarefas.WebApi", "Impacta.Tarefas.WebApi\Impacta.Tarefas.WebApi.csproj", "{2E5487AB-BA00-4657-9B30-4B8A34F364DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D78C696-BB62-4C89-AE99-443F231154A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D78C696-BB62-4C89-AE99-443F231154A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D78C696-BB62-4C89-AE99-443F231154A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D78C696-BB62-4C89-AE99-443F231154A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82037E40-EB77-45E6-B278-ACC2F33429FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82037E40-EB77-45E6-B278-ACC2F33429FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82037E40-EB77-45E6-B278-ACC2F33429FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82037E40-EB77-45E6-B278-ACC2F33429FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AADC233-6C98-4787-B4E5-F5DBFFC292BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AADC233-6C98-4787-B4E5-F5DBFFC292BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AADC233-6C98-4787-B4E5-F5DBFFC292BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AADC233-6C98-4787-B4E5-F5DBFFC292BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D265C4D-28E3-4F86-B72E-0B755D3A36BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D265C4D-28E3-4F86-B72E-0B755D3A36BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D265C4D-28E3-4F86-B72E-0B755D3A36BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D265C4D-28E3-4F86-B72E-0B755D3A36BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAC87E1-415B-4A07-9DD2-BC68683503D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAC87E1-415B-4A07-9DD2-BC68683503D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAC87E1-415B-4A07-9DD2-BC68683503D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAC87E1-415B-4A07-9DD2-BC68683503D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5487AB-BA00-4657-9B30-4B8A34F364DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5487AB-BA00-4657-9B30-4B8A34F364DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5487AB-BA00-4657-9B30-4B8A34F364DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5487AB-BA00-4657-9B30-4B8A34F364DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {627E8858-4C85-45FD-9EF0-F21813DC0BC1}
+	EndGlobalSection
+EndGlobal

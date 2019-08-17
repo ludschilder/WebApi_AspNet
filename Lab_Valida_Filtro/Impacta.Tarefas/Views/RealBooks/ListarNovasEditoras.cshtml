@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Impacta.MOD.Editora>
+
+@{
+    ViewBag.Title = "Lista de Editora";
+}
+
+<h2>Listar Novas Editoras</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar nova editora", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cnpj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cnpj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.EditoraId }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.EditoraId }, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.EditoraId }, new { @class = "btn btn-danger" }))
+        </td>
+    </tr>
+}
+
+</table>
