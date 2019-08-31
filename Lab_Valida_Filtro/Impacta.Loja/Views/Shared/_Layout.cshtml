@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!--Navegação-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <!--Container´para o menu-->
+        <div class="container">
+
+            <!--Link no canto e botão-->
+            <div class="navbar-header">
+
+                <!--botão em uma tela pequena-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!--Link do canto superior esquerdo-->
+                @Html.ActionLink("Empresa ABC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <!--Menu-->
+            <div class="navbar-collapse collapse">
+
+                <!--Lista de ítens do menu-->
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Quem Somos", "QuemSomos")</li>
+                    <li>@Html.ActionLink("Produtos", "Index", "Produtos", new { Area = "Loja" }, new { }))</li>
+                    <li>@Html.ActionLink("Entre em Contato", "Contato")</li>
+                </ul>
+            </div>
+        </div><!-- final do container -->
+
+    </div><!-- final do menu de navegação -->
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

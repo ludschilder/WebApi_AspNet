@@ -49,38 +49,16 @@
                 </li>
 
                 <li class="nav-item">
-                    @if (User.Identity.IsAuthenticated)
+                    @if ((Impacta.MOD.Usuario)HttpContext.Current.Session["Usuario"] != null)
                     {
-                        @Html.ActionLink("Olá " + User.Identity.Name.ToString().ToUpper() +
-                       "[Clique aqui p/ LOGOUT]", "Logout", "Login", new {}, new { @class = "nav-link dropdown-toggle"})
+                        @Html.ActionLink("Olá " + ((HttpContext.Current.Session["Usuario"] as Impacta.MOD.Usuario).Username.ToUpper()) +
+                       "[Clique aqui p/ LOGOUT]", "Sair", "Autenticador", new {}, new { @class = "nav-link dropdown-toggle"})
 
                     }
                     else
                     {
-                        @Html.ActionLink("LOGIN", "Entrar", "Autenticador", new { }, new { @class = "nav-link dropdown-toggle" })
+                        @Html.ActionLink("LOGIN", "Entrar", "Autenticador", new { }, new { @class = "nav-link dropdown-toggle"})
                     }
-
-
-                    @*@if ((Impacta.MOD.Usuario)HttpContext.Current.Session["Usuario"] != null)
-                        {
-                            @Html.ActionLink("Olá " + ((HttpContext.Current.Session["Usuario"] as Impacta.MOD.Usuario).Username.ToUpper()) +
-                           "[Clique aqui p/ LOGOUT]", "Sair", "Autenticador", new {}, new { @class = "nav-link dropdown-toggle"})
-
-                        }
-                        else
-                        {
-                            @Html.ActionLink("LOGIN", "Entrar", "Autenticador", new { }, new { @class = "nav-link dropdown-toggle"})
-                        }*@
-                    @*@if ((Impacta.MOD.Usuario)HttpContext.Current.Session["Usuario"] != null)
-                        {
-                            @Html.ActionLink("Olá " + ((HttpContext.Current.Session["Usuario"] as Impacta.MOD.Usuario).Username.ToUpper()) +
-                           "[Clique aqui p/ LOGOUT]", "Sair", "Autenticador", new {}, new { @class = "nav-link dropdown-toggle"})
-
-                        }
-                        else
-                        {
-                            @Html.ActionLink("LOGIN", "Entrar", "Autenticador", new { }, new { @class = "nav-link dropdown-toggle"})
-                        }*@
 
                 </li>
 

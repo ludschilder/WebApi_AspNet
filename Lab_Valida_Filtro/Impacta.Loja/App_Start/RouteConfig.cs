@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Impacta.Tarefas
+namespace Impacta.Loja
 {
 	public class RouteConfig
 	{
@@ -16,7 +16,7 @@ namespace Impacta.Tarefas
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Login", action = "Autenticacao", id = UrlParameter.Optional }
+				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 			);
 		}
 	}
