@@ -8,10 +8,9 @@ using Impacta.Tarefas.Business;
 
 namespace Impacta.Tarefas.Controllers
 {
-    public class RealBooksController : Controller
+	[Authorize]
+	public class RealBooksController : Controller
     {
-		//teste
-
 		// GET: RealBooks
 		public ActionResult Index()
 		{
@@ -46,7 +45,6 @@ namespace Impacta.Tarefas.Controllers
 				throw ex;
 			}
 		}
-
 
 		// GET: RealBooks/Create
 		public ActionResult Create()
